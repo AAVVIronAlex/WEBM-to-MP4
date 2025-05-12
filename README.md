@@ -65,3 +65,9 @@ Install `ffmpeg`: `pacman -S ffmpeg`
 Verify installation: `ffmpeg --version`
 
 ### Downloading and installing `ffmpeg` on Gentoo
+
+Update your repositories: `emerge --sync`
+
+Install `ffmpeg`: `emerge --ask media-video/ffmpeg`
+
+Verify installation: `ffmpeg --version`
