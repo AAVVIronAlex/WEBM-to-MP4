@@ -1,8 +1,7 @@
 mkdir transcoded;
 
-for i in *.webm; do
-    echo "Transcoding $i..."
-
+for i in *.webm; 
+do   
     ffmpeg -i "$i" \
         -c:v libx264 -profile:v high -pix_fmt yuv420p -preset slow -crf 18 \
         -c:a aac -b:a 192k \
